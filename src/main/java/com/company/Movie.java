@@ -42,7 +42,7 @@ public class Movie {
         moneySpent += director.pay();
 
         //Print out money spent
-        System.out.println("Money spent = "+ String.format("%,.2f",moneySpent));
+        System.out.println("Money spent = $"+ String.format("%,.2f",moneySpent));
 
         //Call the profit setter and pass money spent.
         setProfit(moneySpent);
@@ -57,7 +57,7 @@ public class Movie {
     public void setProfit(double moneySpent) {
         this.profit = budget - moneySpent + moneyEarned;
         director.setRoyalties(profit);
-        System.out.println("Profits = "+ String.format("%,.2f",getProfit()));
+        System.out.println("Profits = $"+ String.format("%,.2f",getProfit()));
     }
 
     //Getters and setters for all other variables and objects in Movies

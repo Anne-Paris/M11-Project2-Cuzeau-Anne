@@ -6,7 +6,7 @@ public class Crew extends Person{
     //Add Department to constructor for Crew
     public Crew(String name, double pay, String department){
         super(name, pay);
-        department = department;
+        this.department = department;
     }
 
     //Getter and setter for Department

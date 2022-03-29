@@ -37,16 +37,17 @@ public class App {
         Movie newMovie = new Movie("Horror", 400000.0, 6000000, director, listActors, listCrew);
 
         //Print two constants: current Budget and Money Earned
-        System.out.println("Budget = "+ String.format("%,.2f", newMovie.getBudget()));
-        System.out.println("Money earned = "+ String.format("%,.2f", newMovie.getMoneyEarned()));
+        System.out.println("Movie budget = $"+ String.format("%,.2f", newMovie.getBudget()));
+        System.out.println("Money earned = $"+ String.format("%,.2f", newMovie.getMoneyEarned()));
 
-        //Call payDay method, which will print Money Spent and Profits
+        //Call payDay method, which will calculate profit and pay every team member, then print Money Spent and Profits
         newMovie.payday();
 
         /*Print out:
         - how much the PA earned
         - how much the director made in royalties*/
-        System.out.println("PA = "+ String.format("%,.2f", pa.getTotal_earned()));
-        System.out.println("Director royalties= "+ String.format("%,.2f", director.getRoyalties()));
+        System.out.println("PA earned = $"+ String.format("%,.2f", pa.getTotal_earned()));
+        System.out.println("Director royalties = $"+ String.format("%,.2f", director.getRoyalties()));
+
     }
 }
